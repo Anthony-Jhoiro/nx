@@ -99,7 +99,7 @@ export async function addE2E(tree: Tree, options: NormalizedSchema) {
       setParserOptionsProject: false,
       webServerCommand: `${getPackageManagerCommand().exec} nx ${
         options.e2eWebServerTarget
-      } ${options.name}`,
+      } ${options.projectName}`,
       webServerAddress: options.e2eWebServerAddress,
       rootProject: options.rootProject,
       addPlugin: options.addPlugin,
